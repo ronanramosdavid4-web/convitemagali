@@ -1,0 +1,128 @@
+/* Importação de uma fonte divertida */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+    font-family: 'Chewy', cursive, sans-serif;
+    background-color: #fc6055; /* Amarelo clarinho de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.convite-container {
+    background-color: #ffffff; /* Fundo branco para o convite */
+    border: 10px solid #ff4141; /* Borda vermelha (cor de melancia) */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.magali-img {
+    width: 150px; /* Tamanho da imagem da Magali */
+    height: auto;
+    border-radius: 50%; /* Faz a imagem ser redonda */
+    border: 5px solid #28a745; /* Borda verde */
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff4141; /* Vermelho vibrante */
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.detalhes {
+    background-color: #e8ffe8; /* Fundo verde clarinho para os detalhes */
+    border: 2px dashed #28a745;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.detalhes p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.botoes-interativos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: block; /* Para ocupar toda a largura */
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    border: none;
+}
+
+/* Estilo para o botão de Confirmação */
+.rsvp {
+    background-color: #ffc107; /* Amarelo */
+    color: #333;
+}
+
+.rsvp:hover {
+    background-color: #ffcd39;
+    transform: scale(1.02);
+}
+
+/* Estilo para o botão de Localização */
+.localizacao {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.localizacao:hover {
+    background-color: #1f8b37;
+    transform: scale(1.02);
+}
+
+/* Estilo para o botão de Presente */
+.presente {
+    background-color: #ff4141; /* Vermelho */
+    color: white;
+}
+
+.presente:hover {
+    background-color: #e03838;
+    transform: scale(1.02);
+}
+
+.nota {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 15px;
+}
+
+/* Efeito de balanço (opcional) */
+@keyframes balancar {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+}
+
+.convite-container:hover {
+    animation: balancar 0.5s ease-in-out infinite alternate;
+}
