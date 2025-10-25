@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Chewy', cursive, sans-serif;
-    background-color: #fc6055; /* Amarelo clarinho de fundo */
+    background: url('papel-digital-magali-84.jpg') no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,4 +125,5 @@ h2 {
 
 .convite-container:hover {
     animation: balancar 0.5s ease-in-out infinite alternate;
+
 }
